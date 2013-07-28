@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Europeana Contributions </title>
+		<meta name="keywords" content="Europeana, contributions, European heritage">
+		<meta name="author" content="Marije Rooze">
+
+		<link rel="shortcut icon" href="favicon.ico"/>
+		<link href="css/style.css" type="text/css" rel="stylesheet" /> <!-- main stylesheet -->
+		
+	</head>
+	<body>
+		
+		<div class="content_wrapper">
+			<div class="introduction">
+				<h1> Europeana Contributions</h1>
+			</div>
+			
+			<div class="left_layout">
+						
+				<div id="sliderWrapper">
+					<div id="sliderButtons">
+						<div id="previous" class="sliderButton" > previous </div>
+						<div id="next" class="sliderButton" > next </div>
+					</div>
+					<div id="slideryear"> </div>
+					<div id="slider"></div>
+				</div>
+				
+				<div id="annotation"> </div>
+				
+				<div id="barChartWrapper">
+					<h2> Europeana </h2>
+					<div id="chartInformation">
+						<span id="start"> </span> <span id="number"> </span> <span id="end"></span>
+					</div>
+					<div id="barChart"> </div>
+				</div>
+				
+			</div>
+			
+			<div class="right_layout"> <!-- Location of the SVG -->				
+				<div id="tooltip" class="hidden">
+			        <span id="title">Important Label Heading</span>
+			        
+			        <div class="holderLabel">
+			        	<span id="year">100</span>
+			        	<span class="labelYear">amount contribution</span> 
+			       		<span id="value">100</span>
+			       	</div>
+			       
+			        <div class="holderLabel">
+			        	<span id="year2">100</span>
+			        	<span class="labelYear">% contribution Europeana</span> 
+			       		<span id="percentage">100</span>
+			       	</div>
+			        	
+			       		<span id="clickBarchart"> </span>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			<div id="source"> The numbers shown in the visualization are estimates, the data can be downloaded <a href="https://docs.google.com/spreadsheet/ccc?key=0AuaoVTaIdT-cdDhRZmgyZ3JucEtyRFZOS0ZNUFdVVGc&usp=sharing" title="download the data"> here</a>.</div>
+		</div>
+		
+		<script type="text/javascript" src="js/d3/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.10.1.custom.min.js"></script>		
+		<script type="text/javascript" src="js/main.js"></script> 		
+	</body>
+</html>

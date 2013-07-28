@@ -1,0 +1,341 @@
+*:focus {
+	outline: none;
+}
+
+body {
+	margin: 0px 0 0 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 1.5em;
+}
+
+h2 {
+	font-weight: 200;
+	font-size: 1.2em;
+	margin: 0 0 5px;
+}
+
+h3 {
+	display: inline-block;
+	margin: 0;
+	font-size: 1em;
+}
+
+.content_wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.introduction {
+	margin-bottom: 40px;
+}
+
+.circle {
+	fill: #FFB800;
+	stroke: #FFF;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	cursor: pointer;
+}
+
+.circle.IsNaN, .circle.IsNaN:hover {
+	fill: #A2A2A2;
+	cursor:default;
+}
+
+
+.EU {
+	fill: #EEE;
+	stroke: #FFF;
+	stroke-width: .6px;	
+}
+
+.nonEu {
+	fill: #EEE;
+	stroke: #FFF;
+	stroke-width: .6px;
+}
+
+.nonParticipant {
+	fill: #F3F3F3;
+	stroke: #FFF;
+	stroke-width: .6px;
+}
+
+.circle:hover {
+	fill: orange;
+}
+
+.onSelectedBubble {
+	fill: rgba(210, 36, 218, 0.93);
+	cursor: pointer;
+}
+
+.hidden {
+	display: none;
+}
+
+.left_layout {
+	width: 240px;
+	float: left;
+}
+
+.right_layout {
+	width: 650px;
+	float: right;
+	margin-left: 20px;
+}
+
+/* SLIDER MODULE */
+
+#sliderWrapper {
+	height: 100px;
+}
+
+#sliderButtons {
+	float: left;
+	margin: 0 15px 15px 0px;
+}
+
+#slideryear {
+	line-height: 25px;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left: 5px;
+	display: inline-block;
+	color: #3D3D3D;
+}
+
+#slider {
+	width: 200px;
+	clear:both;
+	margin-left:15px
+}
+
+.sliderButton {
+	background-color: #EEE;
+	padding: 6px 7px;
+	color: white;
+	margin-right:10px;
+	font-size: .8em;
+	display: inline-block;
+	cursor:default;
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.sliderButton.active{
+	cursor:pointer;
+	background-color: rgba(221, 125, 3, 0.75);
+	
+}
+
+.sliderButton.active:hover {
+	cursor:pointer;
+	background-color: rgba(221, 125, 3, 1);
+}
+
+#year {
+	margin-bottom: 10px;
+	border: none;
+}
+
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+
+.ui-slider-horizontal {
+	height: .2em;
+	border-radius: 5px;
+	background-color: #AAA;
+}
+
+.ui-slider .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.4em;
+	width: .7em;
+	height: .7em;
+	border: 1px solid #B1B1B1;
+	position: absolute;
+	cursor: pointer;
+	background-color: white;
+	text-align: left;
+	z-index: 1000;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px #CCC;
+}
+
+.ui-slider .ui-slider-handle:hover {
+	background-color: #F1F1F1;
+}
+
+.ui-slider-tick-mark {
+	display: inline-block;
+	width: 1px;
+	background: #929292;
+	height: 6px;
+	position: absolute;
+	top: 5px;
+}
+
+.ui-slider-tick-label {
+	display: inline-block;
+	color: #929292;
+	position: absolute;
+	top: 15px;
+	font-size: .75em;
+}
+
+.selectedYear {
+	font-weight:bold;
+	top: 14px;
+}
+
+/* TOOLTIP */
+
+#tooltip {
+	position: absolute;
+	height: auto;
+	padding: 5px 10px;
+	background-color: rgba(255, 255, 255, .8);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+	pointer-events: none;
+}
+
+.holderLabel {
+	line-height: .95em;
+}
+
+.labelYear, #year, #year2 {
+	font-size: .8em;
+}
+
+#labelYear {
+	margin-right: 20px;
+}
+
+#clickBarchart {
+	display: block;
+	margin: 3px 0;
+	font-size: .7em;
+	font-style: italic;
+}
+
+#title {
+	display: block;
+	font-size: .95em;
+	margin-bottom: .2em;
+}
+
+#value, #percentage {
+	font-size: .80em;
+	font-weight:bold;
+}
+
+#value {
+	float:right;
+}
+
+/* ANNOTATION MODULE */
+
+#annotation {
+	height: 160px;
+}
+
+#chartInformation {
+	height: 70px;
+	overflow: hidden;
+}
+#annotation, #chartInformation {
+	font-size: .80em;
+	font-weight: 200;
+	line-height: 1.5em;
+	color: #414040;	
+}
+
+/* BARCHART MODULE */
+
+
+.axis {
+	font-size: 10px;
+	font-family: Arial;
+}
+
+.x.axis path {
+	display: none;
+}
+
+g.x .tick line {
+	display: none;
+}
+
+.axis path, .axis line {
+	fill: none;
+	stroke: #CCC;
+	shape-rendering: crispEdges;
+}
+
+.axis line {
+  /* stroke: #777; */
+}
+
+.bar {
+	fill: rgb(167, 49 , 244);
+}
+
+.bar:hover {
+}
+
+.y.axis line {
+  fill: none;
+  stroke: rgba(247, 243, 243, 0.4);
+}
+
+/* SOURCES */
+
+.clear {
+	clear:both;
+}
+
+#source{
+	margin-top:5px;
+	font-size: .8em;
+	font-style:italic;
+	text-align:right;
+	color: #3C3C3C;
+}
+
+#source a {
+	color: #DD7D03;
+	text-decoration: none;
+}
+
+#source a:hover {
+	text-decoration: underline;
+}

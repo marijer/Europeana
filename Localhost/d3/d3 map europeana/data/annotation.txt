@@ -1,0 +1,5 @@
+In November 2008, the Europeana project was officially launched. At that time, only a few institutions were able to provide metadata to Europeana. As one of the initiators, the French National Library provided immediately two million records which was more than 50% of the total.
+At the end of 2010, the amount of metadata records in Europeana had rapidly increased to almost 14 million. Still, many EU countries were not present in Europeana at that point.
+In 2011, a number of Europeana projects focussed on providing more data from countries that were not present before. This resulted in records from every EU country, as well as Israel, Norway and Switzerland. 
+In 2012, Europeana was successful getting more institutions on board. At the same time, they decided that all metadata had be under a CC0 public domain waiver per September. This led to a couple of institutions pulling out their data from Europeana.
+In early 2013, the total number of objects has slightly decreased because of a number of institutions pulling out their data because of the new licensing framework. Especially in France this led to a great decrease. 
